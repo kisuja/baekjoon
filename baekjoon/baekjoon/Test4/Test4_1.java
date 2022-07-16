@@ -1,8 +1,8 @@
-package kisuja.hello.eclipse;
+package Test4;
 
-import java.util.Scanner;
-//백준 3단계 마지막 문제
-public class Test2_1 {
+import java.util.*;
+
+public class Test4_1 {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		int sum =0;
