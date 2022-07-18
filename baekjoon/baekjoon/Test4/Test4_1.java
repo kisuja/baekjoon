@@ -5,20 +5,21 @@ import java.util.*;
 public class Test4_1 {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
-		int sum =0;
-		int x[] = new int[100];
-		for(;;){
-			int a = sc.nextInt();
+		int min = 1000000 , max = 1;
+		int a = sc.nextInt();
+		int x[] = new int[a];
+		for(int i=0; i<a; i ++){
 			int b = sc.nextInt();
-			if(a==0&&b==0) {
-				break;
-			}
-			x[sum] = a + b;
-			sum++;
+			x[i] = b;
 		}
-		for(int i =0; i<sum; i++) {
-			System.out.println(x[i]);
+		for(int i = 0; i < a; i++) {
+			if(x[i]<=min)
+				min = x[i];
+			if(x[i]>=max)
+				max = x[i];					
 		}
+		System.out.printf(min+" "+max);
 		
+		sc.close();
 	}
 }
