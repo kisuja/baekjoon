@@ -3,7 +3,7 @@ package Test4;
 import java.util.Scanner;
 
 public class Test4_2 {
-	public static void main(String arg[]) {
+	public static void main(String[] args) {
 		int a[] = new int[9];
 		int num=0;
 		int max=0;

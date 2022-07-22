@@ -2,7 +2,7 @@ package Test3;
 import java.util.Scanner;
 //백준 3단계 마지막 문제
 public class Test3_14 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int sum =0;
 		int x[] = new int[100];
