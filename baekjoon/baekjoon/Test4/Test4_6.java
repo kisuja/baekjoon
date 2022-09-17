@@ -27,6 +27,7 @@ public class Test4_6 {
 			sum=0;
 			num =0;
 		}
+		sc.close();
 	}
 	
 	

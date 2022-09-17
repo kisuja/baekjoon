@@ -19,5 +19,7 @@ public class Test3_14 {
 			System.out.println(x[i]);
 		}
 		
+		sc.close();
+		
 	}
 }
