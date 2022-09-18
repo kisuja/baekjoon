@@ -5,20 +5,23 @@ import java.util.*;
 public class Test4_1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int min = 1000000 , max = 1;
+		int max =-1000000, min =1000000; 
+		
 		int a = sc.nextInt();
-		int x[] = new int[a];
-		for(int i=0; i<a; i ++){
-			int b = sc.nextInt();
-			x[i] = b;
-		}
+		int b[] = new int[a];
+		
 		for(int i = 0; i < a; i++) {
-			if(x[i]<=min)
-				min = x[i];
-			if(x[i]>=max)
-				max = x[i];					
+			b[i] = sc.nextInt();
 		}
-		System.out.printf(min+" "+max);
+		for(int i=0; i<a; i++) {
+			if(b[i]<min) 
+				min = b[i];
+			if(b[i]>max) 
+				max = b[i];
+						
+		}
+		
+		System.out.println(min+" "+max);
 		
 		sc.close();
 	}
